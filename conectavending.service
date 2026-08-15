@@ -1,0 +1,19 @@
+[Unit]
+Description=ConectaVending MDB y MercadoPago
+After=network.target
+
+[Service]
+Type=simple
+User=arduino
+WorkingDirectory=/home/arduino/ArduinoApps/Antigravity-ConectaVending-Deploy
+ExecStart=/usr/bin/python3 /home/arduino/ArduinoApps/Antigravity-ConectaVending-Deploy/src/main.py
+Restart=always
+RestartSec=3
+
+# Output to syslog
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=conectavending
+
+[Install]
+WantedBy=multi-user.target

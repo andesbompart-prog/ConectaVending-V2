@@ -1,0 +1,8 @@
+{
+    "machine_id": "VEND-000",
+    "serial_port": "/dev/ttyUSB0",
+    "baudrate": 9600,
+    "mp_access_token": "APP_USR-XXXX-XXXX-XXXX",
+    "mp_device_id": "NEWLAND_N950__N950NCCC05782589",
+    "button_input_path": "/dev/input/event0"
+}
